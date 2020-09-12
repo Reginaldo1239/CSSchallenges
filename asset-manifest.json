@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/csschallenges/static/css/main.0115ab04.chunk.css",
+    "main.js": "/csschallenges/static/js/main.cd8ba77c.chunk.js",
+    "main.js.map": "/csschallenges/static/js/main.cd8ba77c.chunk.js.map",
+    "runtime-main.js": "/csschallenges/static/js/runtime-main.aca147b9.js",
+    "runtime-main.js.map": "/csschallenges/static/js/runtime-main.aca147b9.js.map",
+    "static/js/2.2d313609.chunk.js": "/csschallenges/static/js/2.2d313609.chunk.js",
+    "static/js/2.2d313609.chunk.js.map": "/csschallenges/static/js/2.2d313609.chunk.js.map",
+    "index.html": "/csschallenges/index.html",
+    "precache-manifest.84f4803a59a63bd9361fbb6aa1d17e78.js": "/csschallenges/precache-manifest.84f4803a59a63bd9361fbb6aa1d17e78.js",
+    "service-worker.js": "/csschallenges/service-worker.js",
+    "static/css/main.0115ab04.chunk.css.map": "/csschallenges/static/css/main.0115ab04.chunk.css.map",
+    "static/js/2.2d313609.chunk.js.LICENSE.txt": "/csschallenges/static/js/2.2d313609.chunk.js.LICENSE.txt",
+    "static/media/style.module.css": "/csschallenges/static/media/bota.f9a6c0db.svg",
+    "static/media/logo.svg": "/csschallenges/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aca147b9.js",
+    "static/js/2.2d313609.chunk.js",
+    "static/css/main.0115ab04.chunk.css",
+    "static/js/main.cd8ba77c.chunk.js"
+  ]
+}
