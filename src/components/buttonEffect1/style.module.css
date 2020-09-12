@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 200px;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.header{
+    width: 100%;
+    margin:10px 0;
+}
+.button{
+    position: relative;
+    padding: 5px;
+    white-space: nowrap;
+    background-color: black;
+    color:white;
+    border:4px solid #cf70cf;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+
+
+
+.border_animada:first-child{
+    position: absolute;
+    border-top:4px solid #ccc;
+    width: 10%;
+    height: 2px;
+    top: -4px;
+    left: 10%;
+    transition: left 1s;
+    -ms-transform: skewX(40deg); /* IE 9 */
+    transform: skewX(40deg); /* Standard syntax */
+ 
+    
+}
+
+.border_animada:last-child{
+    position: absolute;
+    border-top:4px solid #ccc;
+    width: 10%;
+    height: 2px;
+    bottom: -4px;
+    right: 10%;
+    transition: right 1s;
+    -ms-transform: skewX(40deg); /* IE 9 */
+    transform: skewX(40deg); /* Standard syntax */
+ 
+}
+
+
+.button:hover .border_animada:last-child{
+    right:80%;
+}
+.button:hover .border_animada:first-child{
+    left: 80%;
+}
+
+

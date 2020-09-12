@@ -1,0 +1,65 @@
+.container{
+
+}
+.boxText{
+
+}
+
+.span{
+    color:black;
+    font-size: 50px;
+    animation-name: spanAnimation;
+    animation-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.35);
+    animation-iteration-count: infinite;
+    animation-duration: 1.1s;
+   
+}
+span:nth-of-type(0){
+    animation-delay: 0s;
+
+}
+
+span:nth-of-type(1){
+    animation-delay: 0.1s;
+
+}
+span:nth-of-type(2){
+    animation-delay: 0.2s;
+}
+span:nth-of-type(3){
+    animation-delay: 0.3s;
+}
+span:nth-of-type(4){
+    animation-delay: 0.4s;
+}
+span:nth-of-type(5){
+    animation-delay: 0.5s;
+}
+span:nth-of-type(6){
+    animation-delay: 0.6s;
+}
+span:nth-of-type(7){
+    animation-delay: 0.7s;
+}
+span:nth-of-type(8){
+    animation-delay: 0.8s;
+}
+span:nth-of-type(9){
+    animation-delay: 0.9s;
+}
+span:nth-of-type(10){
+    animation-delay: 1s;
+}
+span:nth-of-type(11){
+    animation-delay: 1.1s;
+}
+
+
+@keyframes spanAnimation{
+    0%{
+        color:black;
+    }
+    100%{
+        color:gold;
+    }
+}

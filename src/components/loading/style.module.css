@@ -1,0 +1,54 @@
+.container{
+    min-height: 80px;
+}
+.circle{
+    position: relative;
+    display: inline-block;
+
+}
+.semiCircle1{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    padding:50px;
+    border-radius: 50px;
+    z-index: 1;
+    border:1px solid #ccc;
+    
+}
+.semiCircle2{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+    display: inline-block;
+    padding:50px;
+    border-radius: 50px;
+    border-top: 2px solid black;
+    transform: rotate(0deg);
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.text{
+    position: absolute;
+    top:40%;
+    left: 25%;
+    transform: translate(-50%,-10%);
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animation1 {
+   /* from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}*/
+    0%   {transform: rotate(0deg);border-color:blue;color:blue;}
+    25%  {transform: rotate(90deg); border-color:black;color:black}
+    50%  {transform: rotate(180deg); border-color:red;color:red;}
+    75%  {transform: rotate(270deg); border-color: green;color:green;}
+    100% {transform: rotate(360deg); border-color: blue;color:blue;}
+}

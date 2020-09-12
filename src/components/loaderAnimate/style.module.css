@@ -1,0 +1,76 @@
+.container{
+
+   
+    padding: 15px;
+}
+
+.loaderAnimate{
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    
+}
+.square{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 4px;
+    top:0;
+    left: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.square:nth-of-type(1){
+    top:35px;
+    left: 35px;
+ animation-name: squareAnimation1;
+  
+}
+.square:nth-of-type(2){
+    top:0px;
+   
+    left:35px;
+ animation-name: squareAnimation2;
+   
+}
+.square:nth-of-type(3){
+    top: 0px;
+    left: 0px;
+    animation-name: squareAnimation3;
+
+}
+
+
+@keyframes squareAnimation1{
+
+    0%{top:35px;left: 35px;}
+    25%{top:35px;left: 0px;}
+    50%{top:0px;left: 0px;}
+    75%{top:0px;left: 35px;}
+    100%{top:35px;left: 35px;}
+ 
+}
+@keyframes squareAnimation2{
+
+
+    0%{top:0px;left: 35px;}
+    25%{top:35px;left: 35px;}
+    50%{top:35px;left: 0px;}
+    75%{top:0px;left: 0;}
+    100%{top:0px;left: 35px;}
+
+}
+
+@keyframes squareAnimation3{
+
+
+   0%{top:0px;left: 0px;}
+   25%{top:0px;left:35px}
+   50%{top:35px;left:35px;}
+   75%{top:35px;left:0px}
+   100%{top:0;left:0;}
+
+}

@@ -1,0 +1,55 @@
+.container{
+  
+    z-index: 999;
+    display: flex;
+    margin:0 auto;
+     max-width: 900px;
+  
+     background-color: red;
+     width: 100%;
+
+}
+.box{
+
+    width: 30%;
+    font-size: 27px;
+    padding: 30px;
+    white-space: nowrap;
+    
+    
+    
+}
+
+.span{
+    z-index: 0;
+}
+.box:first-child{
+    background-color: yellow;
+    color: red;
+    z-index: 0;
+}
+.box:last-child{
+    background-color: blue;
+    color: black;
+
+    z-index: 1;
+}
+
+.slide{
+    position: absolute;
+    z-index: 1;
+
+    animation-name: AnimationSlide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+
+}
+
+@keyframes AnimationSlide {
+    0%   {right:0%;}
+    25%   {right:25%;}
+    50%   {right:50%;}
+    75%   {right:75%;}
+    100%  {right:100%;}
+  }

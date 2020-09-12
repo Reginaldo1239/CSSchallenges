@@ -1,0 +1,49 @@
+.container{
+    position: relative;
+    min-height: 70px;
+ 
+}
+
+.circle{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    padding:50px;
+    border-radius: 50px;
+    background-color: green;
+    z-index: 2;
+   
+}
+.circle2{
+    position: absolute;
+    z-index: 1;
+    top:-30px;
+    left: -30px;
+    background-color:green;
+    padding: 80px;
+    border-radius: 80px;
+    animation-name: pulsar;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+.text{
+    position: absolute;
+    color:white;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes pulsar{
+    from {
+        padding:60px;
+        top: -10px;
+        left: -10px;
+        opacity:0.9 ;}
+    to {
+        padding: 80px;
+        top: -30px;
+        left: -30px;
+        opacity: 0;
+    }
+}

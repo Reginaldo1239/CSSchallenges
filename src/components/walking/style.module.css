@@ -1,0 +1,56 @@
+.walking{
+    margin-top: 150px; 
+}
+
+.flor{
+    position: relative;
+    height: 3px;
+    width: 400px;
+    background-color: black;
+} 
+
+.boot{
+    position: absolute;
+    bottom:-8px;
+    left: 0;
+    background-image: url('../../assets/img/bota.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+
+    transform: rotate(0deg);
+    animation-name: walking;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.boot:last-child{
+    animation-delay: 1s;
+}
+
+
+@keyframes walking{
+    0%{
+        transform: rotate(0deg);
+        bottom:-9px;
+       
+    }
+    50%{
+        transform: rotate(75deg);
+      bottom: 20px;
+       
+        
+        
+    }
+    75%{
+        transform: translateX(200px);
+        bottom:-5px;
+    }
+  
+    100%{
+        transform: rotate(0deg);
+       
+        
+    }
+}
